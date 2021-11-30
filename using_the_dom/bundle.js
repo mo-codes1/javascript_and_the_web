@@ -20,5 +20,8 @@
 
   // index.js
   var addNewPost = require_addNewPost();
-  addNewPost("A fourth post");
+  var button = document.querySelector("#add-post-btn");
+  button.addEventListener("click", () => {
+    addNewPost("A fourth post");
+  });
 })();

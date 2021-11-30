@@ -1,3 +1,7 @@
 const addNewPost = require('./addNewPost');
+const button = document.querySelector("#add-post-btn")
 
-addNewPost('A fourth post');
+ button.addEventListener("click", ()=>{
+     addNewPost("A fourth post");
+
+ })
